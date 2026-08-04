@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #050811;
+            overflow: hidden;
+        }
+
+        .container {
+            font-size: 10px;
+            width: 40em;
+            height: 40em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+     
+        .sun {
+            position: absolute;
+            width: 10em;
+            height: 10em;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            box-shadow: 0 0 3em #ffcc00, 0 0 5em #ff9900;
+        }
+
+      
+        .earth-orbit {
+            position: absolute;
+            width: 30em;
+            height: 30em;
+            border: 0.1em solid rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            animation: orbit 12s linear infinite;
+        }
+
+       
+        .earth {
+            position: absolute;
+            top: 2em;
+            right: 2em;
+            width: 3em;
+            height: 3em;
+            background-color: #00d2ff;
+            border-radius: 50%;
+            box-shadow: 0 0 1em #00d2ff;
+        }
+
+        
+        .moon-orbit {
+            position: absolute;
+            top: -1em;
+            right: -1em;
+            width: 5em;
+            height: 5em;
+            border: 0.1em solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: orbit 3s linear infinite;
+        }
+
+     
+        .moon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1em;
+            height: 1em;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 0 0.5em #ffffff;
+        }
+
+        @keyframes orbit {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+      
+        <div class="sun"></div>
+        
+       
+        <div class="earth-orbit">
+            <div class="earth">
+                
+                <div class="moon-orbit">
+                    <div class="moon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        .container {
+            font-size: 10px;
+            width: 40em;
+            height: 40em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .sun {
+            position: absolute;
+            width: 10em;
+            height: 10em;
+            background-color: #ffff00;
+            border-radius: 50%;
+            box-shadow: 0 0 3em #ffff00, 0 0 6em #ffcc00;
+        }
+
+       
+        .earth-orbit {
+            position: absolute;
+            width: 30em;
+            height: 30em;
+            border-radius: 50%;
+          
+            border: 0.15em solid transparent;
+            border-top: 0.15em solid #ffffff;
+            border-right: 0.15em solid rgba(0, 210, 255, 0.5);
+            box-shadow: 0 0 1em rgba(0, 210, 255, 0.4);
+            animation: orbit 12s linear infinite;
+        }
+
+       
+        .earth {
+            position: absolute;
+            top: 2.3em;
+            right: 2.3em;
+            width: 3em;
+            height: 3em;
+            background-color: #00d2ff;
+            border-radius: 50%;
+            box-shadow: 0 0 1.5em #00d2ff;
+        }
+
+      
+        .moon-orbit {
+            position: absolute;
+            top: -1em;
+            right: -1em;
+            width: 5em;
+            height: 5em;
+            border-radius: 50%;
+            border: 0.1em solid transparent;
+            border-top: 0.1em solid #ffffff;
+            animation: orbit 3s linear infinite;
+        }
+
+       
+        .moon {
+            position: absolute;
+            top: 0.2em;
+            right: 0.2em;
+            width: 0.8em;
+            height: 0.8em;
+            background-color: #cccccc;
+            border-radius: 50%;
+            box-shadow: 0 0 0.5em #ffffff;
+        }
+
+        
+        @keyframes orbit {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       
+        . <div class="sun"></div>
+        
+      
+        <div class="earth-orbit">
+            <div class="earth">
+               
+                <div class="moon-orbit">
+                    <div class="moon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
