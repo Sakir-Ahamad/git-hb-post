@@ -1,0 +1,16 @@
+h1 {
+    color: blue;
+
+    text-align: center;
+    border: 3px solid rgb(0, 255, 34);
+}
+body {
+    background: url(../images/image=2.jpg) no-repeat center fixed;
+    background-size: center;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 250px;
+ 
+    padding: 100px;
+    top: 100px;
+}
