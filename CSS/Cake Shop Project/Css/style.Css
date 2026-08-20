@@ -1,14 +1,63 @@
 body
 {
-    background-image: url(../images/cake=1.jpg);
+    background-image: url(../images/cake=3.jpg);
     background-size: cover;
 }
 div
  {
  color: purple;
- margin: 0 auto;
- text-align: left;
- margin: 100px;
-
  
+ background-color: rgba(141, 185, 18, 0.178);
+ margin: 0 auto;
+ margin-top: 80px;
+ margin-left: 1500px;
+ text-align: center;
+ width: 250px;
+ border-radius: 25px;
+ padding: 10px 20px;
+ box-shadow: -13px 13px 16px -1px rgba(0,0,0,0.75);
+ }
+
+select
+{
+    width: 200px;
+    background-color: rgb(132, 179, 221);
+    color: rgb(98, 0, 255);
+    padding: 5px;
+
+}
+  input
+ {
+    width: 198px;
+    background-color: rgb(132, 179, 221);
+    color: rgb(98, 0, 255);
+    padding: 5px;
+
+ }
+
+ textarea
+ {
+     width: 200px;
+    background-color: rgb(132, 179, 221);
+    color: rgb(98, 0, 255);
+    padding: 5px;
+
+ }
+
+ button
+ {
+   margin-bottom: -10px;
+   border-radius: 12px;
+   width: -35px;
+   padding: 5px;
+   font-size: 15px;
+   background-color: aqua;
+   border-color: blue;
+   cursor: pointer;
+   
+ }
+
+ button:hover
+{
+    box-shadow: 20px 20px 38px rgb(255, 31, 31);    
 }
