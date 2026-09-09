@@ -1,9 +1,20 @@
 h1
 {
-    color: orange;
+    color: lightgreen;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 p
 {
-    color: brown
+    color: brown;
+    font-size: 25;
+    font-style: italic;
+    font-weight:bold;
+    font-family:Arial;
+    
+
+
+
 }
