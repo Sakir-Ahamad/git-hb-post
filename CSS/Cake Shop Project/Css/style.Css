@@ -5,12 +5,11 @@ body
 }
 div
  {
- color: purple;
- 
- background-color: rgba(141, 185, 18, 0.178);
+ color: rgb(255, 4, 255);
+ background-color: rgba(187, 255, 0, 0.178);
  margin: 0 auto;
- margin-top: 80px;
- margin-left: 1500px;
+ margin-top: 95px;
+ margin-left: 1400px;
  text-align: center;
  width: 250px;
  border-radius: 25px;
