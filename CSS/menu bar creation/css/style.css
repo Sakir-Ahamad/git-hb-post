@@ -1,0 +1,20 @@
+ul
+{
+    list-style-type: none;
+    background-color: #e9abab;
+    margin-left:  600px;
+    background-color: gray;
+    margin-top: 10px;
+}
+
+ul li
+{
+    float: left;
+    padding: 10px;
+
+}
+ul li a
+{
+    text-decoration: none;
+
+}
