@@ -34,7 +34,7 @@ body{
  {
     width: 80%;
     height: 1500px;
-    background-color: aqua;
+    
     margin: 0 auto; 
  }
 
@@ -91,7 +91,108 @@ body{
 .one 
 {
     width: 32%;
-    height: 100%;
-    background-color: blue;
-    margin: ;
+    height: 700px;
+    background-color: rgb(166, 255, 57);
+    margin-top: 40px;
+    border-radius: 10%;
+    float: left;
 }
+
+.two 
+{
+    width: 32%;
+    height: 700px;
+    background-color: rgb(236, 107, 248);
+    margin-top: 40px;
+    border-radius: 10%;
+    float: left;
+    margin-left: 30px;
+}
+
+.three 
+{
+    width: 32%;
+    height: 700px;
+    background-color: rgb(133, 133, 255);
+    margin-top: 40px;
+    border-radius: 10%;
+    float: right;
+}
+.one h1
+{
+   color: rgb(255, 0, 0);
+   text-align: center;
+   font-size: 40px;
+
+}
+.one p
+{
+   color: blue;
+   text-align: justify;
+   padding-left: 30px;
+   padding-right: 30px;
+   font-size: 24px;
+}
+.one a
+{
+  color: black;
+  text-decoration: none;
+  margin-left: 200px;
+  background-color: white;
+  padding: 10px;
+  border: 3px solid black;
+
+}
+
+.two h1
+{
+   color: rgb(255, 0, 0);
+   text-align: center;
+   font-size: 40px;
+
+}
+.two p
+{
+   color: blue;
+   text-align: justify;
+   padding-left: 30px;
+   padding-right: 30px;
+   font-size: 24px;
+}
+.two a
+{
+  color: black;
+  text-decoration: none;
+  margin-left: 200px;
+  background-color: white;
+  padding: 10px;
+  border: 3px solid black;
+
+}
+
+.three h1
+{
+   color: rgb(255, 0, 0);
+   text-align: center;
+   font-size: 40px;
+
+}
+.three p
+{
+   color: blue;
+   text-align: justify;
+   padding-left: 30px;
+   padding-right: 30px;
+   font-size: 24px;
+}
+.three a
+{
+  color: black;
+  text-decoration: none;
+  margin-left: 200px;
+  background-color: white;
+  padding: 10px;
+  border: 3px solid black;
+
+}
+
