@@ -1,0 +1,26 @@
+a:link
+{
+color: rgb(12, 12, 43);
+}
+
+a:visited
+{
+    color: pink;
+
+}
+
+a:hover
+{
+    color: rgb(28, 50, 82);
+}
+a:focus
+{
+    color: greenyellow;
+}
+
+a:active
+{
+    color: brown;
+}
+
+

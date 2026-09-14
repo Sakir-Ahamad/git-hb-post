@@ -1,0 +1,9 @@
+div
+{
+    height: 400px;
+    background:linear-gradient(red,yellow,orange) ;
+    width: 700px;
+    margin-left: 300px;
+    margin-top: 25px;
+
+}

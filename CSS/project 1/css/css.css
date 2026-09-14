@@ -196,3 +196,18 @@ body{
 
 }
 
+.five h3
+{
+   color: rgb(255, 0, 0);
+   /*text-align: center;*/
+   font-size: 40px;
+   margin-left: 800px;
+
+}
+
+.five p
+{
+   text-align: justify;
+
+}
+
