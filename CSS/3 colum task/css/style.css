@@ -1,0 +1,35 @@
+.page
+{
+    width: 1500px;
+    margin: 0 auto;
+}
+.body
+{
+    background-color: rgb(205, 159, 248);
+    padding: 10px;
+
+}
+.leftsidebar
+{
+    width: 20%;
+    float: left;
+    margin-right: 5%;
+    text-align: justify;
+}
+.main
+{
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+    text-align: justify;
+
+}
+.rightside
+{
+    width: 20%;
+    float: right;
+}
+.one
+{
+    clear: both;
+}

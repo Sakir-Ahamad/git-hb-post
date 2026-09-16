@@ -1,0 +1,30 @@
+.page
+{
+    width: 1700px;
+    margin: 0 auto;
+}
+
+.body
+{
+    background-color: aqua;
+}
+
+.main
+{
+    width: 65%;
+    float: left;
+    
+}
+.side
+{
+    width: 30%;
+    float: right;
+}
+/*.end
+{
+    clear: both;
+}*/
+.one
+{
+   clear: both;
+}

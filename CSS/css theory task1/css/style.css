@@ -1,0 +1,30 @@
+body
+{
+    margin: 0px;
+}
+
+
+a
+{
+  text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+    background-color: brown;
+    height: 50px;
+    margin: 0px;
+    padding-top: 25px;
+
+}
+
+li
+{
+    display: inline;
+    padding: 15px;
+    background-color: aqua;
+    margin-right: 40px;
+    padding: 15px;
+
+}

@@ -1,0 +1,19 @@
+ div
+{
+  border: 2px solid red;
+
+}
+
+p
+{
+    margin: 0px;
+
+}
+
+img
+{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    
+}
