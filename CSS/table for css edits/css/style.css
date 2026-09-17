@@ -2,11 +2,41 @@ table
 {
     border: 3px solid rgb(255, 0, 0);
     width: 85%;
+    border-spacing: 5px;
+    border-collapse: collapse;
 
 }
 th,td
 {
-    border: 3px solid rgb(255, 0, 0);
-   /* padding: 10px;
-    text-align: center;*/
+    border: 3px solid rgb(183, 0, 255);
+    padding: 5px;
+    text-align: center;
+    
 }
+.clr1
+{
+    background-color: lightblue;
+    text-align: center;
+
+}
+.clr2
+{
+    background-color: pink;
+    text-align: center;
+}
+.day
+{
+    text-align: center;
+}
+
+/*table
+{
+    margin: 30px;
+
+}
+td
+{
+    border: 4px solid pink;
+    padding: 45px;
+    empty-cells: hide;
+}*/
