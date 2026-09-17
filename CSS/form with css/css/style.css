@@ -1,0 +1,15 @@
+fieldset
+{
+    border: 5px solid rgb(10, 10, 150);
+    margin-bottom: 17px;
+    border-radius: 17px;
+    padding: 45px;
+    background-color: rgb(227, 212, 241);
+}
+legend
+{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50%;
+}
