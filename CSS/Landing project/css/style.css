@@ -1,0 +1,29 @@
+body
+{
+    background: url(../images/images4.jpg) no-repeat center fixed;
+    background-size: cover;
+
+}
+
+
+.hover1 li:hover
+{
+    background-color: darkred;
+}
+.one
+{
+    height: 350px;
+    background-color: rgb(155, 31, 124);
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 15%;
+    border-radius: 15%;
+    
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: white;
+}
+
+
