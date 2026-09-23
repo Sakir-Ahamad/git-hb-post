@@ -27,6 +27,8 @@ th,td
 .day
 {
     text-align: center;
+    font-weight: bold;
+    font-color: blue;
 }
 
 /*table
