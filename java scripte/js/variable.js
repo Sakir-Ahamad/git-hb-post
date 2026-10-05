@@ -77,3 +77,27 @@ let number1 = 10;
 let number2 = 20;
 let sum = number1 + number2;
 console.log(sum);
+
+
+let result=10+20;
+console.log(result);//30
+
+result=result-5;
+console.log(result);//25
+
+result=result*2;
+console.log(result);//50
+
+result=result/5;
+console.log(result);//10
+
+result=result%3;
+console.log(result);//1
+
+
+
+result++;
+console.log(result);//2
+
+result--;
+console.log(result);//1
