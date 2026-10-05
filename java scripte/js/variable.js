@@ -62,5 +62,18 @@ else
 }*/
 
 //NOT gates operaters
-let login = false;
-let payment= false;
+/*let login = false;
+let payment= true;
+
+if (!login && !payment) {
+    console.log("Please login and make payment to access Marstech Campus");
+}*/
+
+console.log(typeof age);
+   
+//arricmatic operators
+
+let number1 = 10;
+let number2 = 20;
+let sum = number1 + number2;
+console.log(sum);
