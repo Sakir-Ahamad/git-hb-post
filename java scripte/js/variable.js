@@ -1,8 +1,8 @@
 //console.log("Hello, World");
 //console.log("wellcome to the world of JavaScript");
 
-
-/*let firstName = "John";
+/*
+let firstName = "John";
 let lastName = "Doe";
 let age = 30;
 let isMarried = false;
@@ -34,10 +34,10 @@ else if (marstech_campus == "teachers")
 else (marstech_campus == "admin") 
 {
     console.log("Welcome to Marstech Campus our admin");
-}*/
+}
 
 //AND gates operaters
-/*let login = true;
+let login = true;
 let payment= false;
 
 if (login && payment) {
@@ -47,10 +47,10 @@ if (login && payment) {
 else
 {
     console.log("Please login and make payment to access Marstech Campus");
-}*/
+}
 
 //OR gates operaters
-/*let login = false;
+let login = false;
 let payment= false;
 
 if (login || payment) {
@@ -59,15 +59,15 @@ if (login || payment) {
 else
 {
     console.log("Please login or make payment to access Marstech Campus");
-}*/
+}
 
 //NOT gates operaters
-/*let login = false;
+let login = false;
 let payment= true;
 
 if (!login && !payment) {
     console.log("Please login and make payment to access Marstech Campus");
-}*/
+}
 
 console.log(typeof age);
    
@@ -134,9 +134,11 @@ console.log(true && true);//true
 
 console.log(true && false);//false
 
+console.log(false && false);//false
+
 console.log(true || true);//true
 
-console.log(true || false);//true
+console.log(true || false);//true*/
 
 
 
