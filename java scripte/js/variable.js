@@ -101,3 +101,43 @@ console.log(result);//2
 
 result--;
 console.log(result);//1
+
+--result;
+console.log(result);//1
+
+let other=++result+ 5;
+console.log(other);//7
+console.log(result);
+
+//relation operaters
+console.log(10>5);//true
+
+console.log(10<5);//false
+
+console.log(20>-18);//true
+
+console.log(15==15);
+
+console.log(15==="15");//false
+console.log(15!=="15");//true
+
+
+//logical operators
+//let login = true;
+//let payment= false;
+
+console.log(!true);//false
+
+console.log(!false);//true
+
+console.log(true && true);//true
+
+console.log(true && false);//false
+
+console.log(true || true);//true
+
+console.log(true || false);//true
+
+
+
+
