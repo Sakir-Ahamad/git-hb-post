@@ -141,5 +141,50 @@ console.log(true || true);//true
 console.log(true || false);//true*/
 
 
+console.log(false || false);//false
+console.log(10>5 && 20<15);//false
+console.log(10>5 || 20<15);//true
+console.log(10>5 && 20<15 || 10>5);//true
 
 
+
+console.log(!true);//false
+console.log(!false);//true
+
+console.log(false||false);//false
+console.log(true||false);//true
+console.log(true||true);//true
+console.log(false||true);//true
+
+
+console.log(true&&true);//true
+console.log(true&&false);//false
+console.log(false&&false);//false
+console.log(false&&true);//false
+
+
+//console.log()
+
+/*let student="sakir "+ "ahmd ";
+console.log(student);*/
+
+//Arrays
+
+let student=["Sakir " ,"ahamad" ,"ali" ,"ahmad" ,"khan"];
+ console.log(student);
+
+ console.log(student[0]);
+ console.log(student[1]);
+ console.log(student[2]);
+ console.log(student[3]);
+ console.log(student[4]);
+
+ console.log(student.length);
+
+ console.log(~student.length);
+ student.push("nisar");
+ student.push("kumar");
+
+ //function
+
+ 
