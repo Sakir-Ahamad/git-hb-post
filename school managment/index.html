@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2><i class="fa-solid fa-graduation-cap"></i> EduAdmin</h2>
+            <ul>
+                <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-graduate"></i> Students</a></li>
+                <li><a href="#"><i class="fa-solid fa-chalkboard-user"></i> Teachers</a></li>
+                <li><a href="#"><i class="fa-solid fa-book"></i> Subjects</a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Attendance</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navbar -->
+            <header>
+                <h1>Dashboard Overview</h1>
+                <div class="user-profile">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Admin User</span>
+                </div>
+            </header>
+
+            <!-- Cards Grid -->
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Total Students</h3>
+                        <p>1,240</p>
+                    </div>
+                    <i class="fa-solid fa-user-graduate card-icon student"></i>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Total Teachers</h3>
+                        <p>85</p>
+                    </div>
+                    <i class="fa-solid fa-chalkboard-user card-icon teacher"></i>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Total Classes</h3>
+                        <p>32</p>
+                    </div>
+                    <i class="fa-solid fa-door-open card-icon class"></i>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Revenue</h3>
+                        <p>$45,200</p>
+                    </div>
+                    <i class="fa-solid fa-wallet card-icon revenue"></i>
+                </div>
+            </div>
+
+            <!-- Recent Students Table Section -->
+            <div class="table-section">
+                <h2>Recent Students</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#ST001</td>
+                            <td>Arun Kumar</td>
+                            <td>Grade 10</td>
+                            <td>arun@example.com</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>#ST002</td>
+                            <td>Priya Sharma</td>
+                            <td>Grade 9</td>
+                            <td>priya@example.com</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>#ST003</td>
+                            <td>Mohammed Rizwan</td>
+                            <td>Grade 11</td>
+                            <td>rizwan@example.com</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
