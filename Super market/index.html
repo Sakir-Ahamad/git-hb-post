@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshCart Supermarket - Online Grocery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>FreshCart</span>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search groceries, vegetables, fruits...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="header-actions">
+      <div class="cart-btn" onclick="toggleCart()">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span>Cart</span>
+        <span class="badge" id="cart-count">2</span>
+      </div>
+      <button class="login-btn"><i class="fa-solid fa-user"></i> Login</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="main-layout">
+
+    <!-- Categories Sidebar -->
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li class="active"><i class="fa-solid fa-border-all"></i> All Products</li>
+        <li><i class="fa-solid fa-carrot"></i> Vegetables & Fruits</li>
+        <li><i class="fa-solid fa-cow"></i> Dairy & Eggs</li>
+        <li><i class="fa-solid fa-jar"></i> Rice, Atta & Oils</li>
+        <li><i class="fa-solid fa-cookie-bite"></i> Snacks & Drinks</li>
+        <li><i class="fa-solid fa-pump-soap"></i> Household Care</li>
+      </ul>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="content">
+
+      <!-- Hero Banner -->
+      <section class="banner">
+        <div class="banner-text">
+          <h2>Fresh Supermarket Groceries</h2>
+          <p>Delivered to your doorstep within 30 minutes!</p>
+          <button class="shop-now-btn">Shop Now</button>
+        </div>
+      </section>
+
+      <!-- Product Section -->
+      <section class="products-section">
+        <h2>Popular Products</h2>
+        <div class="product-grid">
+
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <span class="discount-tag">17% OFF</span>
+            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=400&q=80" alt="Fresh Apples">
+            <h4>Fresh Red Apples</h4>
+            <p class="unit">1 kg</p>
+            <div class="price-row">
+              <span class="price">₹180</span>
+              <span class="old-price">₹200</span>
+            </div>
+            <button class="add-btn"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <span class="discount-tag">15% OFF</span>
+            <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=400&q=80" alt="Fresh Milk">
+            <h4>Fresh Farm Milk</h4>
+            <p class="unit">1 Litre</p>
+            <div class="price-row">
+              <span class="price">₹55</span>
+              <span class="old-price">₹65</span>
+            </div>
+            <button class="add-btn"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <span class="discount-tag">5% OFF</span>
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80" alt="Basmati Rice">
+            <h4>Premium Basmati Rice</h4>
+            <p class="unit">5 kg</p>
+            <div class="price-row">
+              <span class="price">₹450</span>
+              <span class="old-price">₹475</span>
+            </div>
+            <button class="add-btn"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <span class="discount-tag">20% OFF</span>
+            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=400&q=80" alt="Fresh Potatoes">
+            <h4>Organic Potatoes</h4>
+            <p class="unit">1 kg</p>
+            <div class="price-row">
+              <span class="price">₹32</span>
+              <span class="old-price">₹40</span>
+            </div>
+            <button class="add-btn"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+          </div>
+
+        </div
+      </section>
+
+    </main>
+
+    <!-- Side Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <h3>My Order Cart</h3>
+        <button class="close-btn" onclick="toggleCart()">&times;</button>
+      </div>
+      
+      <div class="cart-items">
+        <div class="cart-item">
+          <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=200&q=80" alt="Apples">
+          <div class="item-details">
+            <h5>Fresh Red Apples</h5>
+            <p>1 kg × ₹180</p>
+          </div>
+          <span class="item-price">₹180</span>
+        </div>
+
+        <div class="cart-item">
+          <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=200&q=80" alt="Milk">
+          <div class="item-details">
+            <h5>Fresh Farm Milk</h5>
+            <p>1 Ltr × ₹55</p>
+          </div>
+          <span class="item-price">₹55</span>
+        </div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total Amount:</span>
+          <strong>₹235</strong>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleCart() {
+      const drawer = document.getElementById('cartDrawer');
+      drawer.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
