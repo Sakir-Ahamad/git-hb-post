@@ -29,7 +29,7 @@
             one.textContent = "hello welcome";
         }
        </script>
-    -->
+    
         
     
     <input id="num1" value="10">
@@ -39,16 +39,58 @@
     <p id="result">result</p>
 
    <script>
-        let num1 = document.getElementById("num1")
-        let num2 = document.getElementById("num2")
+        
 
-       let result=  document.getElementById("result")
-       let total =num1.value + num2.value
-        console.log(total);
+          function add() {
+            let num1 = document.getElementById("num1")
+            let num2 = document.getElementById("num2")
 
+           let result=  document.getElementById("result")
+           let total =parseInt(num1.value) * parseInt(num2.value)
+            console.log(total);
+
+           result.textContent = total
+         }
+    </script> -->
+        
+
+    <div id="one"></div>
+    <button onclick="changeColor()">Change Color</button> 
+
+    <style>
+        div
+        {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            transition: width 2s, height 2s, background-color 2s;
+        }
+        .withbox
+        {
+            width: 100%;;
+       
+
+        }
+
+        
+    </style> 
     
+    <!--<script>
 
+        
+        let one =document.getElementById("one");
+
+        function changeColor() {
+            one.style.backgroundColor = "blue";
+        }
+    </script> -->
+
+    <script>
+        let box = document.getElementById("one");
+
+        function changeColor() {
+            box.setAttribute ("class", "withbox");
+        }
     </script>
-
 </body>
 </html>
