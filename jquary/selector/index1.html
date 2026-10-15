@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquary concept</title>
+   <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+</head>
+<body>
+    <div id="one">Wel Come</div>
+    <div class="two">Hello 1</div>
+    <div class="two">Hello 2</div>
+
+    <form>
+        <input type="text" name="name" placeholder="Enter your name"> <br><br>
+        <input type="text" name="email" placeholder="Enter your email"> <br><br>
+        <input type="submit" value="Submit">
+
+  <p>paragraph 1</p>
+  <p>paragraph 2</p>
+    <script>
+        $("#one").text("Thank you for visiting my website");
+
+        $(".two").css("background-color","aqua");
+
+        $("[placeholder]").css("background-color","yellow" , "border","2px solid");
+    </script>
+</body>
+</html>
