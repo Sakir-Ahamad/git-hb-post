@@ -24,10 +24,12 @@ fs.unlinkSync("student.text");
 console.log("delete file successfully");
 */
 
-const fs=require ("fs");
+/*const fs=require ("fs");
 const data =fs.readFileSync("student.text" ,"utf8");
 
 console.log (data);
 console.log ("next operation");
+*/
+
 
 
