@@ -31,5 +31,10 @@ console.log (data);
 console.log ("next operation");
 */
 
+const fs=require("fs");
+const path=require("path");
+const filepath=path.json(__dirname,"student.text");
+const data=fs.readFileSync(filepath,"utf-8");
 
+console.log(data);
 
