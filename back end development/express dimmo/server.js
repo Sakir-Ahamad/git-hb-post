@@ -1,0 +1,15 @@
+import express from "express";
+const app = express();
+
+app.get("/", (req, res) => {
+    res.send("Hello World");
+});
+
+app.get("/about", (req, res) => {
+    
+});
+
+app.listen(3000, () => {
+    console.log("server running");
+
+    });
