@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp Login Animation | CodeByGaurav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="room" id="room">
+        <div class="room-light" id="roomLight"></div>
+        <div class="fireflies" id="fireflies"></div>
+        
+        <!-- Lamp Section -->
+        <div class="lamp-container">
+            <div class="lamp-shade"></div>
+            <div class="lamp-bulb" id="lampBulb"></div>
+            <div class="lamp-stand"></div>
+            <div class="lamp-base"></div>
+        </div>
+
+        <!-- Login Form Section -->
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Welcome Back</h2>
+                <p>Enter your details to access your account</p>
+            </div>
+
+            <form class="login-form" onsubmit="event.preventDefault();">
+                <div class="input-group">
+                    <span class="input-icon">👤</span>
+                    <input type="text" placeholder="Username" required>
+                </div>
+                
+                <div class="input-group">
+                    <span class="input-icon">✉️</span>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign In</button>
+
+                <div class="divider">
+                    <span>OR CONTINUE WITH</span>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="social-btn">
+                        <span>G</span> Google
+                    </button>
+                    <button type="button" class="social-btn">
+                        <span>🐙</span> GitHub
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
