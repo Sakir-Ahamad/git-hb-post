@@ -16,7 +16,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/Email", (req, res) => {
-    res.send("Email  Page to WelCome")
+    res.send("Email deeeee Page to WelCome")
 });
 
 app.listen(4000, () => {
