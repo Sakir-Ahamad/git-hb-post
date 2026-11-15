@@ -1,3 +1,6 @@
+//import { startTransition } from "react";
+
+
 let students = [
     { id: 1, name: "Raja", age: 20, course: "SE" },
     { id: 2, name: "Kumar", age: 22, course: "IT" },
@@ -10,15 +13,19 @@ export const getStudents = (req, res) => {
 };
 
 // GET student by ID
-export const getStudentById = (req, res) => {
+export const getStudentById = (req, res, next) => {
+
     const id = Number(req.params.id);
 
     const student = students.find((s) => s.id === id);
 
     if (!student) {
-        return res.status(404).json({
-            message: "Student not found"
-        });
+
+        const error = new Error("Student not found");
+
+        error.status = 404;
+
+        return next(error);
     }
 
     res.status(200).json(student);
@@ -35,6 +42,8 @@ export const createStudent = (req, res) => {
         student: newStudent
     });
 };
+
+
 
 // PATCH student
 export const updateStudent = (req, res) => {
@@ -55,6 +64,8 @@ export const updateStudent = (req, res) => {
         student
     });
 };
+
+
 
 // DELETE student
 export const deleteStudent = (req, res) => {
