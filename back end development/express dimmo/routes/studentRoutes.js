@@ -1,5 +1,5 @@
 import express from "express";
-
+import validateStudent from "../middleware/validatestudent.js";
 import {
     getStudents,
     getStudentById,
@@ -7,6 +7,7 @@ import {
     updateStudent,
     deleteStudent
 } from "../controllers/studentController.js";
+import validatestudent from "../middleware/validatestudent.js";
 
 const router = express.Router();
 
@@ -17,7 +18,7 @@ router.get("/", getStudents);
 router.get("/:id", getStudentById);
 
 // POST student
-router.post("/", createStudent);
+router.post("/", validatestudent, createStudent);
 
 // PATCH student
 router.patch("/:id", updateStudent);
