@@ -47,6 +47,36 @@ app.get("/welcome", (req, res) => {
     );
 });
 
+// student page route
+app.get("/student-page", (req, res) => {
+    const students =[
+    {
+        id: 1,
+        name: "Sanha",
+        course: "software enginearing",
+        age: 16,
+        //status: "active"
+    },
+
+    {
+        id: 2,
+        name: "Sanjana",
+        course: "software enginearing",
+        age: 18,
+        //status: "active"
+    },
+
+    {
+        id: 3,
+        name: "Sanjay",
+        course: "software enginearing",
+        age: 20,
+        //status: "active"
+    }
+    ];
+    res.render("student-page", { students: students });
+});
+
 // student info
 app.get("/skr", (req, res) => {
     res.render("studentinfo",

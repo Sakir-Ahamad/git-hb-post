@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student page </title>
+    <style>
+        body
+         {
+           font-family: arial, sans-serif;
+           margin: 60px;
+        }
+
+        table 
+        {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td
+        {
+            border:3px solid #04ff2e;
+            padding: 12px;
+            text-align: center;
+            text-align: 58%;
+        }
+
+        th
+        {
+            background-color: #e92222;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Student List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>course</th>
+                <th>age</th>
+                <th>status</th>
+            </tr>
+        </thead>
+    
+
+    
+ <tbody>
+    <% students.forEach((student) => { %>
+    <tr>
+        <td><%= student.id %></td>
+        <td><%= student.name %></td>
+        <td><%= student.course %></td>
+        <td><%= student.age %></td>
+        
+        <!-- status காலத்திற்குள் நேராக கண்டிஷனை எழுதவும் -->
+        <td>
+            <% if (student.age >= 18) { %>
+                adult
+            <% } else { %>
+                minor
+            <% } %>
+        </td>
+    </tr>
+    <% }); %>
+</tbody>
+    </table>
+</body>
+</html>
