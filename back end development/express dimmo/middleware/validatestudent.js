@@ -14,7 +14,8 @@ const validateStudent = (req, res, next) =>
 
         if (typeof name !== "string" || name.trim()==="")
         {
-            return res.status(400).json(
+            return res.status(400).json
+    (
               
             {
                 message: "name must be a non-empty string"

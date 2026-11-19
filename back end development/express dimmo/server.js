@@ -11,6 +11,7 @@ app.set("view engine", "ejs");
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(errorHandler);
+app.use(express.static("public"));
 
 // Custom middleware
 /*const myMiddleware = (req, res, next) => {
@@ -40,7 +41,9 @@ app.get("/", (req, res) => {
 // ejs route
 app.get("/welcome", (req, res) => {
     res.render("welcome", 
-        {name: "SKR_AHMD",
+
+        {   title:"welcome",
+            name: "SKR_AHMD",
             course: "IT",
             age: "22"
         }
@@ -61,7 +64,7 @@ app.get("/student-page", (req, res) => {
     {
         id: 2,
         name: "Sanjana",
-        course: "software enginearing",
+        course: "cyber Security Researher",
         age: 18,
         //status: "active"
     },
@@ -69,21 +72,32 @@ app.get("/student-page", (req, res) => {
     {
         id: 3,
         name: "Sanjay",
-        course: "software enginearing",
+        course: "full Stack Developer",
         age: 20,
         //status: "active"
     }
     ];
-    res.render("student-page", { students: students });
+    res.render("student-page", {title: "student page", students: students });
 });
 
 // student info
 app.get("/skr", (req, res) => {
     res.render("studentinfo",
-        {name: "Sanha ",
+        {title:"Student Information",
+         name: "Sanha ",
         course: "software engineering",
         age: "16"
     }
+    );
+});
+
+//about page 
+app.get("/about", (req, res) =>
+{
+    res.render("about",
+        {
+            title: "About Us"
+        }
     );
 });
 

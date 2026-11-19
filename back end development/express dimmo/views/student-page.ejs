@@ -1,38 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student page </title>
-    <style>
-        body
-         {
-           font-family: arial, sans-serif;
-           margin: 50px;
-        }
+<%- include("partials/header") %>
 
-        table 
-        {
-            width: 100%;
-            border-collapse: collapse;
-        }
 
-        th, td
-        {
-            border:3px solid #04ff2e;
-            padding: 12px;
-            text-align: center;
-            text-align: 58%;
-        }
-
-        th
-        {
-            background-color: #e92222;
-        }
-       
-    </style>
-</head>
-<body>
     <h1>Student List</h1>
 
     <table>
@@ -68,5 +36,6 @@
     <% }); %>
 </tbody>
     </table>
-</body>
-</html>
+
+<%- include("partials/footer") %>
+
