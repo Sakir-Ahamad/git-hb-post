@@ -5,7 +5,7 @@ let students = [
     { id: 1, name: "Raja", age: 20, course: "SE" },
     { id: 2, name: "Kumar", age: 22, course: "IT" },
     { id: 3, name: "Kamal", age: 22, course: "IT" }
-    {id: 4}
+    
 ];
 
 // GET all students

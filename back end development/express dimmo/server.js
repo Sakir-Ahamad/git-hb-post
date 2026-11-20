@@ -12,6 +12,36 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(errorHandler);
 app.use(express.static("public"));
+app.use(express.urlencoded({extended:true}));
+
+//Temporary Student Data pages
+let Students = 
+[
+  {
+        id: 1,
+        name: "Sanha",
+        course: "software enginearing",
+        age: 16,
+        //status: "active"
+    },
+
+    {
+        id: 2,
+        name: "Sanjana",
+        course: "cyber Security Researher",
+        age: 18,
+        //status: "active"
+    },
+
+    {
+        id: 3,
+        name: "Sanjay",
+        course: "full Stack Developer",
+        age: 20,
+        //status: "active"
+    }
+    
+];
 
 // Custom middleware
 /*const myMiddleware = (req, res, next) => {
@@ -100,6 +130,59 @@ app.get("/about", (req, res) =>
         }
     );
 });
+
+//Contact Page
+app.get("/contact", (req, res) =>
+{
+    res.render("contact",
+    {
+        title: "Contact"
+    }
+   );
+}  
+);
+
+//registration form
+app.get("/register", (req, res) =>
+{
+    res.render("register",
+        {
+            title: "Student Register form"
+        }
+
+    );
+}
+);
+
+//student handle route
+app.post("/register", (req, res) =>
+ {
+    const {name,age,course} =req.body;
+
+    //server-side valitation
+    const parsedAge=number(age);
+
+    if(
+        typeof name !=="string" || name,trim()==="" ||
+        !number.isInteger(parsedAge) ||parsedAge <-0 ||
+        typeof course !=="string" || !["software enginearing", "cyber Security Researher","full Stack Developer"].includes(course)
+     )
+
+    {
+        return res.status(400).send("invalid student details")
+    }
+
+    const newstudent =
+    {
+        id: Math.max(0,...studentRoutes.map (s=>s.id))+1,
+        name:name.trim(),
+        age:parsedAge,
+        course:course
+    };
+    students.push(newstudent);
+    res.redirect("/student-page");
+ }
+);
 
 // localhost port
 app.listen(3000, () => {

@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<h1>Student Registration</h1>
+
+<form action="/register" method="post" >
+    <label>Student Name :</label>
+    <input type="text" name="name" placeholder="Enter the full name" required >
+
+    <label>Age:</label>
+    <input type="number" name="age" min="1" placeholder="Enter the age" required>
+
+    <label>Course</label>
+    <select name="course" required>
+        <option value="">select your course</option>
+        <option value="software enginearing">software enginearing</option>
+        <option value="cyber Security Researher">cyber Security Researher</option>
+        <option value="	full Stack Developer">	full Stack Developer</option>
+        <option value="network enginearing">network enginearing</option>
+
+    </select>
+    
+    <button type="submit" >Register Student Details </button>
+</form>
+
+<br>
+<%- include("partials/footer") %>
