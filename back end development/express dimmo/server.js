@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({extended:true}));
 
 //Temporary Student Data pages
-let Students = 
+let students = 
 [
   {
         id: 1,
@@ -82,7 +82,7 @@ app.get("/welcome", (req, res) => {
 
 // student page route
 app.get("/student-page", (req, res) => {
-    const students =[
+    /*const students =[
     {
         id: 1,
         name: "Sanha",
@@ -106,7 +106,7 @@ app.get("/student-page", (req, res) => {
         age: 20,
         //status: "active"
     }
-    ];
+    ];*/
     res.render("student-page", {title: "student page", students: students });
 });
 
@@ -160,11 +160,11 @@ app.post("/register", (req, res) =>
     const {name,age,course} =req.body;
 
     //server-side valitation
-    const parsedAge=number(age);
+    const parsedAge=Number(age);
 
     if(
-        typeof name !=="string" || name,trim()==="" ||
-        !number.isInteger(parsedAge) ||parsedAge <-0 ||
+        typeof name !== "string" || name.trim() === "" ||
+        !Number.isInteger(parsedAge) ||parsedAge <-0 ||
         typeof course !=="string" || !["software enginearing", "cyber Security Researher","full Stack Developer"].includes(course)
      )
 
@@ -174,7 +174,7 @@ app.post("/register", (req, res) =>
 
     const newstudent =
     {
-        id: Math.max(0,...studentRoutes.map (s=>s.id))+1,
+       id: Math.max(0, ...students.map((s) => s.id)) + 1,
         name:name.trim(),
         age:parsedAge,
         course:course

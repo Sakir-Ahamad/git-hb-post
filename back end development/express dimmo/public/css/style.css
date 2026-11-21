@@ -52,3 +52,40 @@ th {
     text-align: center;
     padding: 15px;
 }
+
+form
+{
+    max-width: 450px;
+    background-color: #93d3fd;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+form label
+{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+
+}
+
+form input,form select
+{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #29e969;
+  border-radius: 5px;
+}
+
+formm button
+{
+  background-color: aqua;
+  color: #ff0000;
+  border: #98bffa;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
