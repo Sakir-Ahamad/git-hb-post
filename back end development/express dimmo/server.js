@@ -117,8 +117,7 @@ app.get("/skr", (req, res) => {
          name: "Sanha ",
         course: "software engineering",
         age: "16"
-    }
-    );
+    });
 });
 
 //about page 
