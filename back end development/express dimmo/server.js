@@ -44,10 +44,10 @@ let students =
 ];
 
 // Custom middleware
-/*const myMiddleware = (req, res, next) => {
+const myMiddleware = (req, res, next) => {
     console.log("hidden middleware working");
     next();
-};*/
+};
 
 const requestLogger = (req, res, next) => {
     console.log("request method:", req.method);
